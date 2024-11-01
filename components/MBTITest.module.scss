@@ -1,0 +1,62 @@
+.container {
+  @apply flex flex-col items-center justify-center min-h-[80vh];
+}
+
+.card {
+  @apply w-full max-w-2xl p-8 bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content {
+  @apply flex flex-col items-center;
+}
+
+.title {
+  @apply text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.questionContainer {
+  @apply w-full space-y-6;
+}
+
+.question {
+  @apply text-xl font-semibold text-center text-gray-800 mb-6;
+}
+
+.options {
+  @apply flex flex-col space-y-4;
+}
+
+.optionButton {
+  @apply w-full py-4 text-lg transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-700 hover:border-indigo-300;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.result {
+  @apply text-center;
+}
+
+.resultContent {
+  @apply flex flex-col items-center space-y-6;
+}
+
+.resultTitle {
+  @apply text-2xl font-bold text-gray-800 mt-4;
+}
+
+.resultDescription {
+  @apply text-lg text-gray-600 mb-8;
+}
+
+.resetButton {
+  @apply bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-indigo-700 hover:to-purple-700 transition-all duration-200;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+  }
+}
